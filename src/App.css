@@ -1,0 +1,68 @@
+h1{
+  font-size: x-large;
+  background-color: yellow;
+  text-align: center;
+  padding: 5px;
+}
+
+p{
+  font-size: medium;
+}
+h3{
+  text-align: left;
+  background-color: cyan;
+  padding:2px;
+  margin: 0;
+}
+.question{
+  border: 1px solid cyan;
+  margin: 2px 20px;
+  white-space: pre-wrap;
+}
+.options{
+  margin: 4px 10px;
+}
+.score{
+  color: forestgreen;
+  font-size: x-large;
+  text-align: center;
+}
+
+
+
+.nxtBtn {
+  margin: 10px 12px;
+  background: cyan;
+  border: 1px solid cyan;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: vlack;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 8px 20px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.nxtBtn:hover,
+.nxtBtn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: black;
+}
+
+.nxtBtn:active {
+  opacity: .5;
+}

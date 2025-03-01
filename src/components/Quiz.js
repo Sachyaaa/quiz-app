@@ -32,7 +32,7 @@ const Quiz = () => {
                 ))
                 :
                 (<div>
-                    <div>Your final score is {score}</div>
+                    <p className="score">Your final score is {score}</p>
                     {questions.map(question => (
                         <div key={question.id}>
                             <Question
