@@ -315,6 +315,90 @@ export const questions = [
     "answer": "d",
     "description": "The while loop decrements 'x' until it is no longer greater than 0. The final value printed is 0."
   },
+[
+  {
+    "id": 11,
+    "question": "Which of the following is a valid variable name in Java?",
+    "options": ["a) 1variable", "b) variable_1", "c) variable-1", "d) variable 1"],
+    "answer": "b",
+    "description": "In Java, variable names cannot start with a digit, contain hyphens, or spaces. 'variable_1' is a valid identifier."
+  },
+  {
+    "id": 12,
+    "question": "What is the default value of a boolean variable in Java?",
+    "options": ["a) true", "b) false", "c) 0", "d) null"],
+    "answer": "b",
+    "description": "In Java, the default value of a boolean variable is 'false'."
+  },
+  {
+    "id": 13,
+    "question": "Which of the following data types has the highest range of values in Java?",
+    "options": ["a) byte", "b) int", "c) long", "d) double"],
+    "answer": "d",
+    "description": "Among the given options, 'double' has the highest range as it is a double-precision 64-bit IEEE 754 floating point."
+  },
+  {
+    "id": 14,
+    "question": "What will be the output of the following code?\n\n```java\nint a = 5;\nint b = 10;\nint c = 15;\nif (a > b && a > c) {\n    System.out.println(a);\n} else if (b > a && b > c) {\n    System.out.println(b);\n} else {\n    System.out.println(c);\n}\n```",
+    "options": ["a) 5", "b) 10", "c) 15", "d) Compilation error"],
+    "answer": "c",
+    "description": "The 'else' block executes because both previous conditions are false. Therefore, 'c' (which is 15) is printed."
+  },
+  {
+    "id": 15,
+    "question": "Which of the following statements is true about the 'switch' statement in Java?",
+    "options": [
+      "a) It can only evaluate 'int' data types.",
+      "b) It can evaluate 'int', 'char', 'byte', 'short', 'enum', and 'String' data types.",
+      "c) It can evaluate any data type.",
+      "d) It cannot have a 'default' case."
+    ],
+    "answer": "b",
+    "description": "The 'switch' statement in Java can evaluate 'int', 'char', 'byte', 'short', 'enum', and 'String' data types."
+  },
+  {
+    "id": 16,
+    "question": "What will be the output of the following code?\n\n```java\nint i = 0;\ndo {\n    System.out.print(i + \" \");\n    i++;\n} while (i < 3);\n```",
+    "options": ["a) 0 1 2", "b) 0 1 2 3", "c) 1 2 3", "d) 1 2 3 4"],
+    "answer": "a",
+    "description": "The 'do-while' loop executes the block first and then checks the condition. It prints '0 1 2' before 'i' becomes 3 and the loop terminates."
+  },
+  {
+    "id": 17,
+    "question": "Which of the following is not a valid identifier for a variable in Java?",
+    "options": ["a) myVariable", "b) 123variable", "c) _myVariable", "d) $variable"],
+    "answer": "b",
+    "description": "In Java, variable names cannot start with a digit. '123variable' is not a valid identifier."
+  },
+  {
+    "id": 18,
+    "question": "Which of the following can be operands of arithmetic operators?",
+    "options": ["a) Numeric", "b) Boolean", "c) Characters", "d) Both Numeric & Characters"],
+    "answer": "d",
+    "description": "The operands of arithmetic operators can be either numeric or character types, but not boolean."
+  },
+  {
+    "id": 19,
+    "question": "What is true about a 'break' statement in Java?",
+    "options": [
+      "a) It stops the execution of the entire program.",
+      "b) It halts the execution and forces the control out of the loop.",
+      "c) It forces the control out of the loop and starts the execution of the next iteration.",
+      "d) It halts the execution of the loop for a certain time frame."
+    ],
+    "answer": "b",
+    "description": "The 'break' statement halts the execution and forces the control out of the loop."
+  },
+  {
+    "id": 20,
+    "question": "Which of the following is used with the 'switch' statement?",
+    "options": ["a) continue", "b) exit", "c) break", "d) do"],
+    "answer": "c",
+    "description": "The 'break' statement is used with a 'switch' statement to shift control out of the 'switch' block."
+  },
+
+]
+
         
 
 
