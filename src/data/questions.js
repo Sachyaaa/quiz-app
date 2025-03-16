@@ -396,6 +396,131 @@ export const questions = [
     "answer": "c",
     "description": "The 'break' statement is used with a 'switch' statement to shift control out of the 'switch' block."
   },
+[
+  {
+    "id": 21,
+    "question": "What is the output of the following code?\n\n```java\nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= 2; j++) {\n        System.out.print(i * j + \" \");\n    }\n}\n```",
+    "options": [
+      "a) 1 2 2 4 3 6",
+      "b) 1 2 3 4 5 6",
+      "c) 2 4 6 8 10 12",
+      "d) Compilation error"
+    ],
+    "answer": "a",
+    "description": "The outer loop runs from 1 to 3, and the inner loop runs from 1 to 2. The product of 'i' and 'j' is printed in each iteration, resulting in '1 2 2 4 3 6'."
+  },
+  {
+    "id": 22,
+    "question": "How many times will the following code print \"Hello\"?\n\n```java\nfor (int i = 0; i < 4; i++) {\n    for (int j = 0; j < 3; j++) {\n        System.out.println(\"Hello\");\n    }\n}\n```",
+    "options": [
+      "a) 4",
+      "b) 7",
+      "c) 12",
+      "d) 16"
+    ],
+    "answer": "c",
+    "description": "The outer loop runs 4 times, and for each iteration, the inner loop runs 3 times, resulting in 4 * 3 = 12 iterations."
+  },
+  {
+    "id": 23,
+    "question": "What will be the output of the following code?\n\n```java\nint i = 0;\ndo {\n    System.out.print(i + \" \");\n    i++;\n} while (i < 3);\n```",
+    "options": [
+      "a) 0 1 2",
+      "b) 1 2 3",
+      "c) 0 1 2 3",
+      "d) Infinite loop"
+    ],
+    "answer": "a",
+    "description": "The 'do-while' loop executes the block first and then checks the condition. It prints '0 1 2' before 'i' becomes 3 and the loop terminates."
+  },
+  {
+    "id": 24,
+    "question": "Which of the following statements is true about the 'for' loop in Java?",
+    "options": [
+      "a) The initialization, condition, and increment/decrement can be omitted.",
+      "b) Only the initialization and increment/decrement can be omitted.",
+      "c) Only the condition can be omitted.",
+      "d) None of the above"
+    ],
+    "answer": "a",
+    "description": "In a 'for' loop, all three components (initialization, condition, increment/decrement) are optional, but the semicolons must be present."
+  },
+  {
+    "id": 25,
+    "question": "What will be the output of the following code?\n\n```java\nfor (int i = 0; i < 2; i++) {\n    for (int j = 0; j < 2; j++) {\n        if (i == j) {\n            System.out.print(i + \" \");\n        }\n    }\n}\n```",
+    "options": [
+      "a) 0 1",
+      "b) 0 1 2",
+      "c) 0 0",
+      "d) 1 1"
+    ],
+    "answer": "a",
+    "description": "The code prints 'i' only when 'i' equals 'j'. Both 'i' and 'j' take values 0 and 1, so the condition is true twice, printing '0 1'."
+  },
+  {
+    "id": 26,
+    "question": "How many times does the following code print a '*'?\n\n```java\nfor (int i = 3; i < 9; i++) {\n    System.out.print('*');\n}\n```",
+    "options": [
+      "a) 9",
+      "b) 7",
+      "c) 6",
+      "d) 10"
+    ],
+    "answer": "c",
+    "description": "The loop starts at 'i = 3' and runs while 'i' is less than 9. It iterates 6 times (3, 4, 5, 6, 7, 8), printing '*' each time."
+  },
+  {
+    "id": 27,
+    "question": "What is the output of the following code?\n\n```java\nint n = 3;\nfor (int i = 0; i < n; i++) {\n    for (int j = 0; j <= i; j++) {\n        System.out.print('*');\n    }\n    System.out.println();\n}\n```",
+    "options": [
+      "a) *\n**\n***\n",
+      "b) ***\n**\n*\n",
+      "c) *\n*\n*\n",
+      "d) ***\n***\n***\n"
+    ],
+    "answer": "a",
+    "description": "The code prints a right-angled triangle of '*' characters. The outer loop runs 3 times, and the inner loop prints an increasing number of '*' each time."
+  },
+  {
+    "id": 28,
+    "question": "What is the output of the following code?\n\n```java\nint sum = 0;\nfor (int i = 1; i <= 5; i++) {\n    sum += i;\n}\nSystem.out.println(sum);\n```",
+    "options": [
+      "a) 5",
+      "b) 10",
+      "c) 15",
+      "d) 20"
+    ],
+    "answer": "c",
+    "description": "The code calculates the sum of integers from 1 to 5. The result is 1 + 2 + 3 + 4 + 5 = 15."
+  },
+  
+ [
+  {
+    "id": 29,
+    "question": "What will be the output of the following code?\n\n```java\nfor (int i = 0; i < 3; i++) {\n    for (int j = 0; j < 2; j++) {\n        if (i == 1 && j == 1) {\n            break;\n        }\n        System.out.print(i + \" \" + j + \" \");\n    }\n}\n```",
+    "options": [
+      "a) 0 0 0 1 1 0 2 0 2 1",
+      "b) 0 0 0 1 1 0 2 0",
+      "c) 0 0 0 1 1 0",
+      "d) 0 0 1 0 2 0"
+    ],
+    "answer": "b",
+    "description": "The outer loop runs 3 times (i = 0, 1, 2). The inner loop runs 2 times for each iteration of the outer loop (j = 0, 1). When i == 1 and j == 1, the break statement exits the inner loop. Therefore, the output is '0 0 0 1 1 0 2 0'."
+  },
+  {
+    "id": 30,
+    "question": "How many times will the following code print \"*\"?\n\n```java\nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= 2; j++) {\n        if (i == 2 && j == 2) {\n            continue;\n        }\n        System.out.print(\"*\");\n    }\n}\n```",
+    "options": [
+      "a) 6",
+      "b) 5",
+      "c) 4",
+      "d) 3"
+    ],
+    "answer": "b",
+    "description": "The outer loop runs 3 times (i = 1, 2, 3). The inner loop runs 2 times for each iteration of the outer loop (j = 1, 2). When i == 2 and j == 2, the continue statement skips the current iteration of the inner loop. Therefore, the '*' is printed 5 times."
+  }
+
+
 
 ]
 
