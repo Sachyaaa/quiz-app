@@ -242,283 +242,376 @@ export const questions = {
     },
   ],
   "Test_2": [
-    {
-      "id": 1,
-      "question": "Which of the following is a valid declaration of a variable in Java?",
-      "options": ["a) int 1x = 10;", "b) int x = 10;", "c) float x = 10.0;", "d) Both b and c"],
-      "answer": "d",
-      "description": "Variable names cannot start with a digit. Both 'int x = 10;' and 'float x = 10.0;' are valid declarations."
-    },
-    {
-      "id": 2,
-      "question": "Which of the following statements is true about automatic type conversion in Java?",
-      "options": [
-        "a) Automatic type conversion is possible from int to long.",
-        "b) Automatic type conversion is possible from long to int.",
-        "c) Automatic type conversion is possible from double to float.",
-        "d) Automatic type conversion is possible from char to boolean."
-      ],
-      "answer": "a",
-      "description": "In Java, automatic type conversion (widening conversion) occurs when a smaller data type is assigned to a larger data type, such as int to long."
-    },
-    {
-      "id": 3,
-      "question": "What will be the output of the following code?\n\nint x = 10;\nint y = 4;\nint z = x / y;\nSystem.out.println(z);\n",
-      "options": ["a) 2", "b) 2.5", "c) 3", "d) 0"],
-      "answer": "a",
-      "description": "In Java, dividing two integers performs integer division, so 10 / 4 results in 2."
-    },
-    {
-      "id": 4,
-      "question": "Which of the following is a valid way to declare and initialize a char variable in Java?",
-      "options": ["a) char c = 'a';", "b) char c = 97;", "c) char c = \"a\";", "d) Both a and b"],
-      "answer": "d",
-      "description": "In Java, a char can be initialized using a character literal (e.g., 'a') or its corresponding ASCII value (e.g., 97)."
-    },
-    {
-      "id": 5,
-      "question": "Which of the following operators is used to compare two values for equality in Java?",
-      "options": ["a) =", "b) ==", "c) !=", "d) equals()"],
-      "answer": "b",
-      "description": "In Java, '==' is used to compare two values for equality."
-    },
-    {
-      "id": 6,
-      "question": "What will be the output of the following code?\n\nint a = 5;\nint b = 10;\nSystem.out.println(a > b ? a : b);\n  ",
-      "options": ["a) 5", "b) 10", "c) true", "d) false"],
-      "answer": "b",
-      "description": "The ternary operator evaluates 'a > b' as false, so it returns 'b', which is 10."
-    },
-    {
-      "id": 7,
-      "question": "Which of the following loops will execute at least once, regardless of the condition?",
-      "options": ["a) for loop", "b) while loop", "c) do-while loop", "d) None of the above"],
-      "answer": "c",
-      "description": "A 'do-while' loop executes the loop body at least once before checking the condition."
-    },
-    {
-      "id": 8,
-      "question": "What will be the output of the following code?\n\nfor(int i = 0; i < 5; i++) {\n    if(i == 3) {\n        break;\n    }\n    System.out.print(i);\n}\n  ",
-      "options": ["a) 01234", "b) 012", "c) 123", "d) 0123"],
-      "answer": "b",
-      "description": "The loop prints '0', '1', and '2'. When 'i' equals '3', the 'break' statement terminates the loop."
-    },
-    {
-      "id": 9,
-      "question": "Which keyword is used to exit a loop in Java?",
-      "options": ["a) exit", "b) break", "c) continue", "d) return"],
-      "answer": "b",
-      "description": "The 'break' keyword is used to exit the nearest loop or switch statement."
-    },
-    {
-      "id": 10,
-      "question": "What will be the output of the following code?\n \nint x = 5;\nwhile(x > 0) {\n    x--;\n}\nSystem.out.println(x);\n  ",
-      "options": ["a) 5", "b) 4", "c) 1", "d) 0"],
-      "answer": "d",
-      "description": "The while loop decrements 'x' until it is no longer greater than 0. The final value printed is 0."
-    },
-    {
-      "id": 11,
-      "question": "Which of the following is a valid variable name in Java?",
-      "options": ["a) 1variable", "b) variable_1", "c) variable-1", "d) variable 1"],
-      "answer": "b",
-      "description": "In Java, variable names cannot start with a digit, contain hyphens, or spaces. 'variable_1' is a valid identifier."
-    },
-    {
-      "id": 12,
-      "question": "What is the default value of a boolean variable in Java?",
-      "options": ["a) true", "b) false", "c) 0", "d) null"],
-      "answer": "b",
-      "description": "In Java, the default value of a boolean variable is 'false'."
-    },
-    {
-      "id": 13,
-      "question": "Which of the following data types has the highest range of values in Java?",
-      "options": ["a) byte", "b) int", "c) long", "d) double"],
-      "answer": "d",
-      "description": "Among the given options, 'double' has the highest range as it is a double-precision 64-bit IEEE 754 floating point."
-    },
-    {
-      "id": 14,
-      "question": "What will be the output of the following code?\n \nint a = 5;\nint b = 10;\nint c = 15;\nif (a > b && a > c) {\n    System.out.println(a);\n} else if (b > a && b > c) {\n    System.out.println(b);\n} else {\n    System.out.println(c);\n}\n  ",
-      "options": ["a) 5", "b) 10", "c) 15", "d) Compilation error"],
-      "answer": "c",
-      "description": "The 'else' block executes because both previous conditions are false. Therefore, 'c' (which is 15) is printed."
-    },
-    {
-      "id": 15,
-      "question": "Which of the following statements is true about the 'switch' statement in Java?",
-      "options": [
-        "a) It can only evaluate 'int' data types.",
-        "b) It can evaluate 'int', 'char', 'byte', 'short', 'enum', and 'String' data types.",
-        "c) It can evaluate any data type.",
-        "d) It cannot have a 'default' case."
-      ],
-      "answer": "b",
-      "description": "The 'switch' statement in Java can evaluate 'int', 'char', 'byte', 'short', 'enum', and 'String' data types."
-    },
-    {
-      "id": 16,
-      "question": "What will be the output of the following code?\n \nint i = 0;\ndo {\n    System.out.print(i + \" \");\n    i++;\n} while (i < 3);\n  ",
-      "options": ["a) 0 1 2", "b) 0 1 2 3", "c) 1 2 3", "d) 1 2 3 4"],
-      "answer": "a",
-      "description": "The 'do-while' loop executes the block first and then checks the condition. It prints '0 1 2' before 'i' becomes 3 and the loop terminates."
-    },
-    {
-      "id": 17,
-      "question": "Which of the following is not a valid identifier for a variable in Java?",
-      "options": ["a) myVariable", "b) 123variable", "c) _myVariable", "d) $variable"],
-      "answer": "b",
-      "description": "In Java, variable names cannot start with a digit. '123variable' is not a valid identifier."
-    },
-    {
-      "id": 18,
-      "question": "Which of the following can be operands of arithmetic operators?",
-      "options": ["a) Numeric", "b) Boolean", "c) Characters", "d) Both Numeric & Characters"],
-      "answer": "d",
-      "description": "The operands of arithmetic operators can be either numeric or character types, but not boolean."
-    },
-    {
-      "id": 19,
-      "question": "What is true about a 'break' statement in Java?",
-      "options": [
-        "a) It stops the execution of the entire program.",
-        "b) It halts the execution and forces the control out of the loop.",
-        "c) It forces the control out of the loop and starts the execution of the next iteration.",
-        "d) It halts the execution of the loop for a certain time frame."
-      ],
-      "answer": "b",
-      "description": "The 'break' statement halts the execution and forces the control out of the loop."
-    },
-    {
-      "id": 20,
-      "question": "Which of the following is used with the 'switch' statement?",
-      "options": ["a) continue", "b) exit", "c) break", "d) do"],
-      "answer": "c",
-      "description": "The 'break' statement is used with a 'switch' statement to shift control out of the 'switch' block."
-    },
-    {
-      "id": 21,
-      "question": "What is the output of the following code?\n \nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= 2; j++) {\n        System.out.print(i * j + \" \");\n    }\n}\n  ",
-      "options": [
-        "a) 1 2 2 4 3 6",
-        "b) 1 2 3 4 5 6",
-        "c) 2 4 6 8 10 12",
-        "d) Compilation error"
-      ],
-      "answer": "a",
-      "description": "The outer loop runs from 1 to 3, and the inner loop runs from 1 to 2. The product of 'i' and 'j' is printed in each iteration, resulting in '1 2 2 4 3 6'."
-    },
-    {
-      "id": 22,
-      "question": "How many times will the following code print \"Hello\"?\n \nfor (int i = 0; i < 4; i++) {\n    for (int j = 0; j < 3; j++) {\n        System.out.println(\"Hello\");\n    }\n}\n  ",
-      "options": [
-        "a) 4",
-        "b) 7",
-        "c) 12",
-        "d) 16"
-      ],
-      "answer": "c",
-      "description": "The outer loop runs 4 times, and for each iteration, the inner loop runs 3 times, resulting in 4 * 3 = 12 iterations."
-    },
-    {
-      "id": 23,
-      "question": "What will be the output of the following code?\n \nint i = 0;\ndo {\n    System.out.print(i + \" \");\n    i++;\n} while (i < 3);\n  ",
-      "options": [
-        "a) 0 1 2",
-        "b) 1 2 3",
-        "c) 0 1 2 3",
-        "d) Infinite loop"
-      ],
-      "answer": "a",
-      "description": "The 'do-while' loop executes the block first and then checks the condition. It prints '0 1 2' before 'i' becomes 3 and the loop terminates."
-    },
-    {
-      "id": 24,
-      "question": "Which of the following statements is true about the 'for' loop in Java? \n** omitted means not include something",
-      "options": [
-        "a) The initialization, condition, and increment/decrement can be omitted.",
-        "b) Only the initialization and increment/decrement can be omitted.",
-        "c) Only the condition can be omitted.",
-        "d) None of the above"
-      ],
-      "answer": "a",
-      "description": "In a 'for' loop, all three components (initialization, condition, increment/decrement) are optional, but the semicolons must be present."
-    },
-    {
-      "id": 25,
-      "question": "What will be the output of the following code?\n \nfor (int i = 0; i < 2; i++) {\n    for (int j = 0; j < 2; j++) {\n        if (i == j) {\n            System.out.print(i + \" \");\n        }\n    }\n}\n  ",
-      "options": [
-        "a) 0 1",
-        "b) 0 1 2",
-        "c) 0 0",
-        "d) 1 1"
-      ],
-      "answer": "a",
-      "description": "The code prints 'i' only when 'i' equals 'j'. Both 'i' and 'j' take values 0 and 1, so the condition is true twice, printing '0 1'."
-    },
-    {
-      "id": 26,
-      "question": "How many times does the following code print a '*'?\n \nfor (int i = 3; i < 9; i++) {\n    System.out.print('*');\n}\n  ",
-      "options": [
-        "a) 9",
-        "b) 7",
-        "c) 6",
-        "d) 10"
-      ],
-      "answer": "c",
-      "description": "The loop starts at 'i = 3' and runs while 'i' is less than 9. It iterates 6 times (3, 4, 5, 6, 7, 8), printing '*' each time."
-    },
-    {
-      "id": 27,
-      "question": "What is the output of the following code?\n \nint n = 3;\nfor (int i = 0; i < n; i++) {\n    for (int j = 0; j <= i; j++) {\n        System.out.print('*');\n    }\n    System.out.println();\n}\n  ",
-      "options": [
-        "a) *\n**\n***\n",
-        "b) ***\n**\n*\n",
-        "c) *\n*\n*\n",
-        "d) ***\n***\n***\n"
-      ],
-      "answer": "a",
-      "description": "The code prints a right-angled triangle of '*' characters. The outer loop runs 3 times, and the inner loop prints an increasing number of '*' each time."
-    },
-    {
-      "id": 28,
-      "question": "What is the output of the following code?\n \nint sum = 0;\nfor (int i = 1; i <= 5; i++) {\n    sum += i;\n}\nSystem.out.println(sum);\n  ",
-      "options": [
-        "a) 5",
-        "b) 10",
-        "c) 15",
-        "d) 20"
-      ],
-      "answer": "c",
-      "description": "The code calculates the sum of integers from 1 to 5. The result is 1 + 2 + 3 + 4 + 5 = 15."
-    },
+    
+  {
+    "id": 1,
+    "question": "What is the output of the following code?\n\n```java\nfor (int i = 0; i < 3; i++) {\n    System.out.print(i + \" \");\n}\n```",
+    "options": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "Compilation error"
+    ],
+    "answer": "0 1 2",
+    "description": "The loop initializes 'i' to 0 and increments it by 1 on each iteration until it reaches 3. Therefore, it prints '0 1 2'."
+  },
+  {
+    "id": 2,
+    "question": "How many times will the following loop execute?\n\n```java\nfor (int i = 5; i > 0; i--) {\n    System.out.println(i);\n}\n```",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "Infinite loop"
+    ],
+    "answer": "5",
+    "description": "The loop starts with 'i' equal to 5 and decrements it by 1 each time until 'i' is greater than 0. Therefore, it executes 5 times."
+  },
+  {
+    "id": 3,
+    "question": "What is the output of the following code?\n\n```java\nint i = 0;\nwhile (i < 3) {\n    System.out.print(i + \" \");\n    i++;\n}\n```",
+    "options": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "Infinite loop"
+    ],
+    "answer": "0 1 2",
+    "description": "The 'while' loop checks the condition before each iteration. It prints '0 1 2' before 'i' becomes 3 and the loop terminates."
+  },
+  {
+    "id": 4,
+    "question": "What will be the output of the following code?\n\n```java\nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= 2; j++) {\n        System.out.print(i + \" \" + j + \" \");\n    }\n}\n```",
+    "options": [
+      "1 1 1 2 2 1 2 2 3 1 3 2",
+      "1 1 2 1 2 2 3 1 3 2",
+      "1 1 1 2 2 2 2 3 3 3",
+      "1 1 2 2 3 3"
+    ],
+    "answer": "1 1 1 2 2 1 2 2 3 1 3 2",
+    "description": "The outer loop runs from 1 to 3, and the inner loop runs from 1 to 2 for each iteration of the outer loop. This results in the sequence '1 1 1 2 2 1 2 2 3 1 3 2'."
+  },
+  {
+    "id": 5,
+    "question": "What is the output of the following code?\n\n```java\nint i = 0;\ndo {\n    System.out.print(i + \" \");\n    i++;\n} while (i < 3);\n```",
+    "options": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "Infinite loop"
+    ],
+    "answer": "0 1 2",
+    "description": "The 'do-while' loop executes the block first and then checks the condition. It prints '0 1 2' before 'i' becomes 3 and the loop terminates."
+  },
+  {
+    "id": 6,
+    "question": "How many times will the following code print \"Hello\"?\n\n```java\nfor (int i = 0; i < 2; i++) {\n    for (int j = 0; j < 2; j++) {\n        System.out.println(\"Hello\");\n    }\n}\n```",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4",
+    "description": "The outer loop runs 2 times, and for each iteration, the inner loop also runs 2 times, resulting in 2 * 2 = 4 iterations."
+  },
+  {
+    "id": 7,
+    "question": "What will be the output of the following code?\n\n```java\nint i = 0;\nwhile (i < 3) {\n    if (i == 1) {\n        i++;\n        continue;\n    }\n    System.out.print(i + \" \");\n    i++;\n}\n```",
+    "options": [
+      "0 1 2",
+      "0 2",
+      "1 2",
+      "0 1"
+    ],
+    "answer": "0 2",
+    "description": "When 'i' equals 1, the 'continue' statement skips the current iteration, so '1' is not printed. The output is '0 2'."
+  },
+  {
+    "id": 8,
+    "question": "How many times does the following code print a '*'?\n\n```java\nfor (int i = 0; i < 3; i++) {\n    for (int j = 0; j < 2; j++) {\n        System.out.print('*');\n    }\n}\n```",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "6",
+    "description": "The outer loop runs 3 times, and the inner loop runs 2 times for each iteration of the outer loop, resulting in 3 * 2 = 6 '*' characters printed."
+  },
+  {
+    "id": 9,
+    "question": "What is the output of the following code?\n\n```java\nint sum = 0;\nfor (int i = 1; i <= 3; i++) {\n    sum += i;\n}\nSystem.out.println(sum);\n```",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "12"
+    ],
+    "answer": "6",
+    "description": "The code calculates the sum of integers from 1 to 3. The result is 1 + 2 + 3 = 6."
+  },
+   
 
-      {
-        "id": 29,
-        "question": "What will be the output of the following code?\n \nfor (int i = 0; i < 3; i++) {\n    for (int j = 0; j < 2; j++) {\n        if (i == 1 && j == 1) {\n            break;\n        }\n        System.out.print(i + \" \" + j + \" \");\n    }\n}\n  ",
-        "options": [
-          "a) 0 0 0 1 1 0 2 0 2 1",
-          "b) 0 0 0 1 1 0 2 0",
-          "c) 0 0 0 1 1 0",
-          "d) 0 0 1 0 2 0"
-        ],
-        "answer": "b",
-        "description": "The outer loop runs 3 times (i = 0, 1, 2). The inner loop runs 2 times for each iteration of the outer loop (j = 0, 1). When i == 1 and j == 1, the break statement exits the inner loop. Therefore, the output is '0 0 0 1 1 0 2 0'."
-      },
-      {
-        "id": 30,
-        "question": "How many times will the following code print \"*\"?\n \nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= 2; j++) {\n        if (i == 2 && j == 2) {\n            continue;\n        }\n        System.out.print(\"*\");\n    }\n}\n  ",
-        "options": [
-          "a) 6",
-          "b) 5",
-          "c) 4",
-          "d) 3"
-        ],
-        "answer": "b",
-        "description": "The outer loop runs 3 times (i = 1, 2, 3). The inner loop runs 2 times for each iteration of the outer loop (j = 1, 2). When i == 2 and j == 2, the continue statement skips the current iteration of the inner loop. Therefore, the '*' is printed 5 times."
-      }
-    ]
+    [
+  {
+    "id": 10,
+    "question": "What will be the output of the following code?\n\n```java\nint i = 0;\nwhile (i < 3) {\n    System.out.print(i + \" \");\n    i++;\n}\n```",
+    "options": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "Infinite loop"
+    ],
+    "answer": "0 1 2",
+    "description": "The 'while' loop checks the condition before each iteration. It prints '0 1 2' before 'i' becomes 3 and the loop terminates."
+  },
+  {
+    "id": 11,
+    "question": "How many times will the following loop execute?\n\n```java\nfor (int i = 5; i > 0; i--) {\n    System.out.println(i);\n}\n```",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "Infinite loop"
+    ],
+    "answer": "5",
+    "description": "The loop starts with 'i' equal to 5 and decrements it by 1 each time until 'i' is greater than 0. Therefore, it executes 5 times."
+  },
+  {
+    "id": 12,
+    "question": "What is the output of the following code?\n\n```java\nint i = 0;\ndo {\n    System.out.print(i + \" \");\n    i++;\n} while (i < 3);\n```",
+    "options": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "Infinite loop"
+    ],
+    "answer": "0 1 2",
+    "description": "The 'do-while' loop executes the block first and then checks the condition. It prints '0 1 2' before 'i' becomes 3 and the loop terminates."
+  },
+  {
+    "id": 13,
+    "question": "How many times will the following code print \"Hello\"?\n\n```java\nfor (int i = 0; i < 2; i++) {\n    for (int j = 0; j < 2; j++) {\n        System.out.println(\"Hello\");\n    }\n}\n```",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4",
+    "description": "The outer loop runs 2 times, and for each iteration, the inner loop also runs 2 times, resulting in 2 * 2 = 4 iterations."
+  },
+  {
+    "id": 14,
+    "question": "What will be the output of the following code?\n\n```java\nint i = 0;\nwhile (i < 3) {\n    if (i == 1) {\n        i++;\n        continue;\n    }\n    System.out.print(i + \" \");\n    i++;\n}\n```",
+    "options": [
+      "0 1 2",
+      "0 2",
+      "1 2",
+      "0 1"
+    ],
+    "answer": "0 2",
+    "description": "When 'i' equals 1, the 'continue' statement skips the current iteration, so '1' is not printed. The output is '0 2'."
+  },
+  {
+    "id": 15,
+    "question": "How many times does the following code print a '*'?\n\n```java\nfor (int i = 0; i < 3; i++) {\n    for (int j = 0; j < 2; j++) {\n        System.out.print('*');\n    }\n}\n```",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "6",
+    "description": "The outer loop runs 3 times, and the inner loop runs 2 times for each iteration of the outer loop, resulting in 3 * 2 = 6 '*' characters printed."
+  },
+  {
+    "id": 16,
+    "question": "What is the output of the following code?\n\n```java\nint i = 0;\nwhile (i < 3) {\n    System.out.print(i + \" \");\n    i++;\n}\n```",
+    "options": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "Infinite loop"
+    ],
+    "answer": "0 1 2",
+    "description": "The 'while' loop checks the condition before each iteration. It prints '0 1 2' before 'i' becomes 3 and the loop terminates."
+  },
+  {
+    "id": 17,
+    "question": "How many times will the following loop execute?\n\n```java\nfor (int i = 5; i > 0; i--) {\n    System.out.println(i);\n}\n```",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "Infinite loop"
+    ],
+    "answer": "5",
+    "description": "The loop starts with 'i' equal to 5 and decrements it by 1 each time until 'i' is greater than 0. Therefore, it executes 5 times."
+  },
+  {
+    "id": 18,
+    "question": "What is the output of the following code?\n\n```java\nint i = 0;\ndo {\n    System.out.print(i + \" \");\n    i++;\n} while (i < 3);\n```",
+    "options": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "Infinite loop"
+    ],
+    "answer": "0 1 2",
+    "description": "The 'do-while' loop executes the block first and then checks the condition. It prints '0 1 2' before 'i' becomes 3 and the loop terminates."
+  },
+  {
+    "id": 19,
+    "question": "How many times will the following code print \"Hello\"?\n\n```java\nfor (int i = 0; i < 2; i++) {\n    for (int j = 0; j < 2; j++) {\n        System.out.println(\"Hello\");\n    }\n}\n```",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4",
+    "description": "The outer loop runs 2 times, and for each iteration, the inner loop also runs 2 times, resulting in 2 * 2 = 4 iterations."
+  },
+  {
+    "id": 20,
+    "question": "What will be the output of the following code?\n\n```java\nint i = 0;\nwhile (i < 3) {\n    if (i == 1) {\n        i++;\n        continue;\n    }\n    System.out.print(i + \" \");\n    i++;\n}\n```",
+    "options": [
+      "0 1 2",
+      "0 2",
+      "1 2",
+      "0 1"
+    ],
+    "answer": "0 2",
+    "description": "When 'i' equals 1, the 'continue' statement skips the current iteration, so '1' is not printed. The output is '0 2'."
+  },
+  {
+    "id": 21,
+    "question": "How many times does the following code print a '*'?\n\n```java\nfor (int i = 0; i < 3; i++) {\n    for (int j = 0; j < 2; j++) {\n        System.out.print('*');\n    }\n}\n```",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "6",
+    "description": "The outer loop runs 3 times, and the inner loop runs 2 times for each iteration of the outer loop, resulting in 3 * 2 = 6 '*' characters printed."
+  },
+  {
+    "id": 22,
+    "question": "What is the output of the following code?\n\n```java\nint sum = 0;\nfor (int i = 1; i <= 3; i++) {\n    sum += i;\n}\nSystem.out.println(sum);\n```",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "12"
+    ],
+    "answer": "6",
+    "description": "The code calculates the sum of integers from 1 to 3. The result is 1 + 2 + 3 = 6."
+  },
+  {
+    "id": 23,
+    "question": "What will be the output of the following code?\n\n```java\nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= 2; j++) {\n        System.out.print(i + \" \" + j + \" \");\n    }\n}\n```",
+    "options": [
+      "1 1 1 2 2 1 2 2 3 1 3 2",
+      "1 1 2 1 2 2 3 1 3 2",
+      "1 1 1 2 2 2 2 3 3 3",
+      "1 1 2 2 3 3"
+    ],
+    "answer": "1 1 1 2 2 1 2 2 3 1 3 2",
+    "description": "The outer loop runs from 1 to 3, and the inner loop runs from 1 to 2 for each iteration of the outer loop. This results in the sequence '1 1 1 2 2 1 2 2 3 1 3 2'."
+  },
+  {
+    "id": 24,
+    "question": "What is the output of the following code?\n\n```java\nfor (int i = 0; i < 3; i++) {\n    for (int j = 0; j < 3; j++) {\n        if (i == j) {\n            System.out.print(i + \" \");\n        }\n    }\n}\n```",
+    "options": [
+      "0 1 2",
+      "0 0 1 1 2 2",
+      "0 1 2 3",
+      "1 2 3"
+    ],
+    "answer": "0 1 2",
+    "description": "The code prints the value of 'i' only when 'i' equals 'j'.
+}
+ 
+
+    [
+  {
+    "id": 25,
+    "question": "What will be the output of the following code?\n\n```java\nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= i; j++) {\n        System.out.print(j + \" \");\n    }\n    System.out.println();\n}\n```",
+    "options": [
+      "1 \n1 2 \n1 2 3 \n",
+      "1 2 3 \n1 2 \n1 \n",
+      "1 2 3 \n1 2 3 \n1 2 3 \n",
+      "1 \n2 \n3 \n"
+    ],
+    "answer": "1 \n1 2 \n1 2 3 \n",
+    "description": "The outer loop runs 3 times. For each iteration, the inner loop prints numbers from 1 up to the current value of 'i'. This results in a triangular number pattern."
+  },
+  {
+    "id": 26,
+    "question": "How many times will the word \"Hello\" be printed by the following code?\n\n```java\nfor (int i = 0; i < 4; i++) {\n    for (int j = 0; j < 3; j++) {\n        System.out.println(\"Hello\");\n    }\n}\n```",
+    "options": [
+      "3",
+      "4",
+      "7",
+      "12"
+    ],
+    "answer": "12",
+    "description": "The outer loop runs 4 times, and for each iteration, the inner loop runs 3 times, resulting in 4 * 3 = 12 iterations."
+  },
+  {
+    "id": 27,
+    "question": "What is the output of the following code?\n\n```java\nint i = 0;\ndo {\n    System.out.print(i + \" \");\n    i++;\n} while (i < 3);\n```",
+    "options": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "Infinite loop"
+    ],
+    "answer": "0 1 2",
+    "description": "The 'do-while' loop executes the block first and then checks the condition. It prints '0 1 2' before 'i' becomes 3 and the loop terminates."
+  },
+  {
+    "id": 28,
+    "question": "How many times does the following code print a '*'?\n\n```java\nfor (int i = 0; i < 3; i++) {\n    for (int j = 0; j < 2; j++) {\n        System.out.print('*');\n    }\n}\n```",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "6",
+    "description": "The outer loop runs 3 times, and the inner loop runs 2 times for each iteration of the outer loop, resulting in 3 * 2 = 6 '*' characters printed."
+  },
+  {
+    "id": 29,
+    "question": "What will be the output of the following code?\n\n```java\nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= 2; j++) {\n        if (i == 2 && j == 1) {\n            break;\n        }\n        System.out.print(i + \" \" + j + \" \");\n    }\n}\n```",
+    "options": [
+      "1 1 1 2 2 2 3 1 3 2",
+      "1 1 1 2 3 1 3 2",
+      "1 1 1 2 2 1 2 2 3 1 3 2",
+      "1 1 1 2 2 1 3 1 3 2"
+    ],
+    "answer": "1 1 1 2 2 2 3 1 3 2",
+    "description": "The 'break' statement exits the inner loop when 'i' equals 2 and 'j' equals 1. The outer loop continues with the next iteration, resulting in the sequence '1 1 1 2 2 2 3 1 3 2'."
+  },
+  {
+    "id": 30,
+    "question": "What is the output of the following code?\n\n```java\nint i = 0;\nwhile (i < 3) {\n    if (i == 1) {\n        i++;\n        continue;\n    }\n    System.out.print(i + \" \");\n    i++;\n}\n```",
+    "options": [
+      "0 1 2",
+      "0 2",
+      "1 2",
+      "0 1"
+    ],
+    "answer": "0 2",
+    "description": "When 'i' equals 1, the 'continue' statement skips the current iteration, so '1' is not printed. The output is '0 2'."
+  }
+]
+
+    
 
 
 
