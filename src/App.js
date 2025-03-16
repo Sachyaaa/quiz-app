@@ -18,7 +18,7 @@ function App() {
           <Route path="/quiz/:test" element={<Quiz />} />
         </Routes>
       </Router>
-     
+      <h1>Quiz App</h1>
     </div>
   );
 }
