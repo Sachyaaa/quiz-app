@@ -23,7 +23,7 @@ export const Question = ({ question, handleScore, nextQuestion, score, isSubmite
 
   return (
     <div className="question">
-      <h3><span>{question.id}. </span> {question.question}</h3>
+      <div className="qName"><h3><span>{question.id}. </span> {question.question}</h3></div>
       <div className="options">
         {question.options && question.options.map((option) => (
           <div key={option}>
@@ -41,7 +41,7 @@ export const Question = ({ question, handleScore, nextQuestion, score, isSubmite
       </div>
       {!isSubmited && (<button className="nxtBtn" onClick={() => udateScore()}>Next</button>)}
       {isSubmited && 
-      (<div>
+      (<div className="answer">
         <p> <span style={{color: "green", fontWeight: "bold"}}>Answer:</span> {question.answer}</p>
         <p style={{color: "grey", fontStyle: "italic"}}>{question.description}</p>
       </div>)}

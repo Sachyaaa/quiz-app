@@ -1,3 +1,5 @@
+
+
 h1{
   font-size: x-large;
   background-color: yellow;
@@ -16,12 +18,22 @@ h3{
 }
 .question{
   border: 1px solid cyan;
-  margin: 2px 20px;
+  margin: 10px 20px;
   white-space: pre-wrap;
+}
+.qName{
+  background-color: cyan;
+  padding: 5px 13px;
+  text-align: left;  
+  margin: 0;
 }
 .options{
   margin: 4px 10px;
 }
+.answer{
+  padding: 5px 13px;
+}
+
 .score{
   color: forestgreen;
   font-size: x-large;
@@ -31,7 +43,7 @@ h3{
 
 
 .nxtBtn {
-  margin: 10px 12px;
+  margin: 15px 20px;
   background: cyan;
   border: 1px solid cyan;
   border-radius: 6px;
@@ -65,4 +77,89 @@ h3{
 
 .nxtBtn:active {
   opacity: .5;
+}
+
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  /* transform: translateY(0.3em); */
+  margin-top: 1.2em;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.85em;
+  height: 0.85em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em cyan;
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+input[type="checkbox"]:hover {
+  outline: max(2px, 0.15em) solid cyan;
+  outline-offset: max(2px, 0.15em);
+}
+.options div label{
+  display: flex;
+  align-items: flex-end;
+}
+
+.tests h3{
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.testBtns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testBtns > button{
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  background-color: cyan;
+  border: none;
+  border-radius: 6px;
+}
+.testBtns > button:hover{
+  background-color: #000;
+  color: cyan;
+  border: 2px solid cyan;
+}
+
+.backBtn{
+  padding: 10px 25px;
+  display:block;
+  margin: 15px auto;
+  background-color: cyan;
+  border: none;
+  border-radius: 6px;
+  font-size: medium;
+  font-weight: bold;
+  
+}
+
+.backBtn:hover{
+  background-color: #000;
+  color: cyan;
 }
