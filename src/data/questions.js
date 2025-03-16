@@ -238,7 +238,86 @@ export const questions = [
         ],
         "answer": "20",
         "description": "The expression 5 * 2 evaluates to 10, and x += 10 updates x to 20."
-    }
+    }, 
+    [
+  {
+    "id": 1,
+    "question": "Which of the following is a valid declaration of a variable in Java?",
+    "options": ["a) int 1x = 10;", "b) int x = 10;", "c) float x = 10.0;", "d) Both b and c"],
+    "answer": "d",
+    "description": "Variable names cannot start with a digit. Both 'int x = 10;' and 'float x = 10.0;' are valid declarations."
+  },
+  {
+    "id": 2,
+    "question": "Which of the following statements is true about automatic type conversion in Java?",
+    "options": [
+      "a) Automatic type conversion is possible from int to long.",
+      "b) Automatic type conversion is possible from long to int.",
+      "c) Automatic type conversion is possible from double to float.",
+      "d) Automatic type conversion is possible from char to boolean."
+    ],
+    "answer": "a",
+    "description": "In Java, automatic type conversion (widening conversion) occurs when a smaller data type is assigned to a larger data type, such as int to long."
+  },
+  {
+    "id": 3,
+    "question": "What will be the output of the following code?\n\n```java\nint x = 10;\nint y = 4;\nint z = x / y;\nSystem.out.println(z);\n```",
+    "options": ["a) 2", "b) 2.5", "c) 3", "d) 0"],
+    "answer": "a",
+    "description": "In Java, dividing two integers performs integer division, so 10 / 4 results in 2."
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is a valid way to declare and initialize a char variable in Java?",
+    "options": ["a) char c = 'a';", "b) char c = 97;", "c) char c = \"a\";", "d) Both a and b"],
+    "answer": "d",
+    "description": "In Java, a char can be initialized using a character literal (e.g., 'a') or its corresponding ASCII value (e.g., 97)."
+  },
+  {
+    "id": 5,
+    "question": "Which of the following operators is used to compare two values for equality in Java?",
+    "options": ["a) =", "b) ==", "c) !=", "d) equals()"],
+    "answer": "b",
+    "description": "In Java, '==' is used to compare two values for equality."
+  },
+  {
+    "id": 6,
+    "question": "What will be the output of the following code?\n\n```java\nint a = 5;\nint b = 10;\nSystem.out.println(a > b ? a : b);\n```",
+    "options": ["a) 5", "b) 10", "c) true", "d) false"],
+    "answer": "b",
+    "description": "The ternary operator evaluates 'a > b' as false, so it returns 'b', which is 10."
+  },
+  {
+    "id": 7,
+    "question": "Which of the following loops will execute at least once, regardless of the condition?",
+    "options": ["a) for loop", "b) while loop", "c) do-while loop", "d) None of the above"],
+    "answer": "c",
+    "description": "A 'do-while' loop executes the loop body at least once before checking the condition."
+  },
+  {
+    "id": 8,
+    "question": "What will be the output of the following code?\n\n```java\nfor(int i = 0; i < 5; i++) {\n    if(i == 3) {\n        break;\n    }\n    System.out.print(i);\n}\n```",
+    "options": ["a) 01234", "b) 012", "c) 123", "d) 0123"],
+    "answer": "b",
+    "description": "The loop prints '0', '1', and '2'. When 'i' equals '3', the 'break' statement terminates the loop."
+  },
+  {
+    "id": 9,
+    "question": "Which keyword is used to exit a loop in Java?",
+    "options": ["a) exit", "b) break", "c) continue", "d) return"],
+    "answer": "b",
+    "description": "The 'break' keyword is used to exit the nearest loop or switch statement."
+  },
+  {
+    "id": 10,
+    "question": "What will be the output of the following code?\n\n```java\nint x = 5;\nwhile(x > 0) {\n    x--;\n}\nSystem.out.println(x);\n```",
+    "options": ["a) 5", "b) 4", "c) 1", "d) 0"],
+    "answer": "d",
+    "description": "The while loop decrements 'x' until it is no longer greater than 0. The final value printed is 0."
+  },
+        
+
+
 ]
 
 
