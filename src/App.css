@@ -122,6 +122,9 @@ input[type="checkbox"]:hover {
   display: flex;
   align-items: flex-end;
 }
+.options > div{
+ border: 1px solid rgba(209, 205, 205, 0.543);
+}
 
 .tests h3{
   text-align: center;
