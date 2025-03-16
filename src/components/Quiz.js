@@ -5,14 +5,15 @@ import { useNavigate, useParams } from "react-router-dom";
 
 
 
-const Quiz = () => {
+const Quiz = ({test}) => {
     const [score, setScore] = useState(0)
     const [currentId, setCurrentId] = useState(1)
 
-    const {test} = useParams();
-    const navigate = useNavigate();
+    // const {test} = useParams();
+    // const navigate = useNavigate();
 
     const testQuestions = questions[test];
+    console.log(testQuestions)
 
     const handleScore = (score) => {
         setScore(score)
@@ -39,7 +40,7 @@ const Quiz = () => {
                 :
                 (<div>
                     <p className="score">Your final score is {score}</p>
-                    {testQuestions.map(question => (
+                    {testQuestions && testQuestions.map(question => (
                         <div key={question.id}>
                             <Question
                                 question={question}
@@ -49,7 +50,7 @@ const Quiz = () => {
                                 isSubmited={true} />
                         </div>
                     ))}
-                    <button className="backBtn" onClick={() => navigate("/")}>Back</button>
+                    {/* <button className="backBtn" onClick={() => navigate("/")}>Back</button> */}
                 </div>
                 )}
 
